@@ -100,7 +100,48 @@ src/
   app.ts, server.ts
 ```
 
-## CI/CD (Bonus Ideas)
+## POSTMAN IMAGES
 
-- Add GitHub Actions for lint + test + Docker build.
-- Push image to GHCR or Docker Hub and deploy via Compose or k8s.
+### Signup
+
+![Signup](./postman/signup.png)
+
+### Login
+
+![Login](./postman/login.png)
+
+### Delete Device
+
+![Delete Device](./postman/delete_device.png)
+
+### Get Device
+
+![Get Device](./postman/Getdevice.png)
+
+### Device Create
+
+![Device Create](./postman/device_create.png)
+
+### Device Heartbeat
+
+![Device Heartbeat](./postman/device_heartbeat.png)
+
+### Logs Create
+
+![Logs Create](./postman/logs_create.png)
+
+### Logs Get
+
+![Logs Get](./postman/logs_get.png)
+
+### Logs Usage
+
+![Logs Usage](./postman/logs_usange.png)
+
+### Patch Device
+
+![Patch Device](./postman/patchdevice.png)
+
+### Testcase Pass
+
+![Testcase Pass](./postman/testcasepass.png)
