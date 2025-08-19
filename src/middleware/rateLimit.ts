@@ -1,5 +1,5 @@
 import rateLimit from "express-rate-limit";
-import { env } from "@config/env";
+import { env } from "@config/env.ts";
 import type { Request } from "express";
 
 export const perUserRateLimiter = rateLimit({

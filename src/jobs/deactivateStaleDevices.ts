@@ -1,5 +1,5 @@
 import cron from "node-cron";
-import { Device } from "@models/Device";
+import { Device } from "@models/Device.ts";
 
 // Runs every 30 minutes. Deactivates devices inactive for >24h.
 export function startStaleDeviceJob() {

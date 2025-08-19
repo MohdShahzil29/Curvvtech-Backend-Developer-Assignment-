@@ -1,7 +1,7 @@
-import { env } from "@config/env";
-import { connectDB } from "@config/db";
-import app from "./app";
-import { startStaleDeviceJob } from "@jobs/deactivateStaleDevices";
+import { env } from "@config/env.ts";
+import { connectDB } from "@config/db.ts";
+import app from "./app.ts";
+import { startStaleDeviceJob } from "@jobs/deactivateStaleDevices.ts";
 
 async function bootstrap() {
   await connectDB();

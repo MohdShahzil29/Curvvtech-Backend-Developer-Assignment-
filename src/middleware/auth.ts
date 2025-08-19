@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { verifyJwt } from "@config/jwt";
+import { verifyJwt } from "@config/jwt.ts";
 import { StatusCodes } from "http-status-codes";
 
 export interface AuthRequest extends Request {

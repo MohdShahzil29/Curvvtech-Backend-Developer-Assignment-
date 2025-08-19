@@ -1,4 +1,4 @@
-import { Device, IDevice } from "@models/Device";
+import { Device, IDevice } from "@models/Device.ts";
 import { FilterQuery, Types } from "mongoose";
 
 export async function createDevice(

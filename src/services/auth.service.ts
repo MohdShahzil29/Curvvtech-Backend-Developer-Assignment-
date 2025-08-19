@@ -1,6 +1,6 @@
-import { User } from "@models/User";
+import { User } from "@models/User.ts";
 import bcrypt from "bcryptjs";
-import { signJwt } from "@config/jwt";
+import { signJwt } from "@config/jwt.ts";
 
 export async function signup(
   name: string,

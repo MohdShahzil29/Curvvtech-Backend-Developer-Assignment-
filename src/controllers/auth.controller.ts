@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import * as Auth from "@services/auth.service";
+import * as Auth from "@services/auth.service.ts";
 import { StatusCodes } from "http-status-codes";
 
 export async function signup(req: Request, res: Response) {

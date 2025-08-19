@@ -1,6 +1,6 @@
 import request from "supertest";
-import app from "../app";
-import { connect, close, clearDatabase } from "./setup";
+import app from "../app.ts";
+import { connect, close, clearDatabase } from "./setup.ts";
 
 beforeAll(async () => {
   await connect();

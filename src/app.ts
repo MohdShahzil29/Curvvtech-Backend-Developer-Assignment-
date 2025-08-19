@@ -4,11 +4,11 @@ import cors from "cors";
 import compression from "compression";
 import morgan from "morgan";
 import pinoHttp from "pino-http";
-import { perUserRateLimiter } from "@middleware/rateLimit";
-import authRoutes from "@routes/auth.routes";
-import deviceRoutes from "@routes/device.routes";
-import logRoutes from "@routes/log.routes";
-import { errorHandler, notFound } from "@middleware/errorHandler";
+import { perUserRateLimiter } from "@middleware/rateLimit.ts";
+import authRoutes from "@routes/auth.routes.ts";
+import deviceRoutes from "@routes/device.routes.ts";
+import logRoutes from "@routes/log.routes.ts";
+import { errorHandler, notFound } from "@middleware/errorHandler.ts";
 
 const app = express();
 

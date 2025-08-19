@@ -1,14 +1,14 @@
 import { Router } from "express";
-import * as DeviceController from "@controllers/device.controller";
-import { validate } from "@middleware/validate";
-import { auth } from "@middleware/auth";
+import * as DeviceController from "@controllers/device.controller.ts";
+import { validate } from "@middleware/validate.ts";
+import { auth } from "@middleware/auth.ts";
 import {
   createDeviceSchema,
   listDevicesSchema,
   updateDeviceSchema,
   deviceIdParamSchema,
   heartbeatSchema,
-} from "../schemas/device.schema";
+} from "../schemas/device.schema.ts";
 
 const router = Router();
 

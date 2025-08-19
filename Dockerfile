@@ -1,5 +1,5 @@
 # --- Build stage ---
-FROM node:20-alpine AS build
+FROM node:20-bullseye AS build 
 
 WORKDIR /app
 COPY package*.json ./
@@ -8,10 +8,10 @@ COPY . .
 RUN npm run build
 
 # --- Production stage ---
-FROM node:20-alpine AS prod
+FROM node:20-bullseye AS prod  
 WORKDIR /app
 COPY --from=build /app/dist ./dist
 COPY package*.json ./
 RUN npm install --omit=dev
 
-CMD ["node", "dist/index.js"]
+CMD ["node", "dist/server.js"]

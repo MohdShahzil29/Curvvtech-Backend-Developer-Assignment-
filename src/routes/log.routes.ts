@@ -1,12 +1,12 @@
 import { Router } from "express";
-import * as LogController from "@controllers/log.controller";
-import { validate } from "@middleware/validate";
-import { auth } from "@middleware/auth";
+import * as LogController from "@controllers/log.controller.ts";
+import { validate } from "@middleware/validate.ts";
+import { auth } from "@middleware/auth.ts";
 import {
   createLogSchema,
   getLogsSchema,
   usageSchema,
-} from "../schemas/log.schema";
+} from "../schemas/log.schema.ts";
 
 const router = Router();
 
